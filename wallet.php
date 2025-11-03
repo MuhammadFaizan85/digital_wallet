@@ -447,51 +447,49 @@ $spending_categories = [
                     </div>
                 </div>
 
-                <!-- Bottom Navigation Menu - Home, Agent, Location, QR Code, Favourites, Promotions -->
-                <div class="bg-white rounded-2xl p-3 shadow-card border border-gray-100">
-                    <div class="flex justify-between items-center">
-                        <!-- Home -->
-                        <div class="flex flex-col items-center space-y-1">
-                            <div class="w-10 h-10 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600">
-                                <i class="fas fa-home text-sm"></i>
-                            </div>
-                            <span class="text-xs text-gray-700 font-medium">Home</span>
-                        </div>
-                        
-                        <!-- Agent with Location Icon -->
-                        <div class="flex flex-col items-center space-y-1">
-                            <div class="w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center text-green-600 relative">
-                                <i class="fas fa-map-marker-alt text-sm"></i>
-                            </div>
-                            <span class="text-xs text-gray-700 font-medium">Agent</span>
-                        </div>
-                        
-                        <!-- QR Code -->
-                        <div class="flex flex-col items-center space-y-1">
-                            <div class="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600">
-                                <i class="fas fa-qrcode text-sm"></i>
-                            </div>
-                            <span class="text-xs text-gray-700 font-medium">QR Code</span>
-                        </div>
-                        
-                        <!-- Favourites -->
-                        <div class="flex flex-col items-center space-y-1">
-                            <div class="w-10 h-10 bg-yellow-100 rounded-xl flex items-center justify-center text-yellow-600">
-                                <i class="fas fa-star text-sm"></i>
-                            </div>
-                            <span class="text-xs text-gray-700 font-medium">Favourites</span>
-                        </div>
-                        
-                        <!-- Promotions -->
-                        <div class="flex flex-col items-center space-y-1">
-                            <div class="w-10 h-10 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600">
-                                <i class="fas fa-tag text-sm"></i>
-                            </div>
-                            <span class="text-xs text-gray-700 font-medium">Promotions</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              <!-- Bottom Navigation -->
+  <nav class="fixed bottom-2 left-1/2 -translate-x-1/2 w-[95%] max-w-md bg-white rounded-2xl shadow-md border border-gray-100 p-3">
+    <div class="flex justify-between items-center">
+
+      <!-- Home -->
+      <button class="flex flex-col items-center space-y-1">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center text-gray-700">
+          <i class="fas fa-home text-lg"></i>
+        </div>
+        <span class="text-xs text-gray-700 font-medium">Home</span>
+      </button>
+
+      <!-- Agent -->
+      <button class="flex flex-col items-center space-y-1">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center text-gray-700">
+          <i class="fas fa-map-marker-alt text-lg"></i>
+        </div>
+        <span class="text-xs text-gray-700 font-medium">Agent</span>
+      </button>
+
+      <!-- QR Code (Active) -->
+      <button class="flex flex-col items-center space-y-1">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#40000A] to-[#8B000B] flex items-center justify-center text-white shadow-inner">
+          <i class="fas fa-qrcode text-lg"></i>
+        </div>
+        <span class="text-xs text-gray-900 font-semibold">QR Code</span>
+      </button>
+
+      <!-- Favorites -->
+      <button class="flex flex-col items-center space-y-1">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center text-gray-700">
+          <i class="fas fa-star text-lg"></i>
+        </div>
+        <span class="text-xs text-gray-700 font-medium">Favorites</span>
+      </button>
+
+      <!-- Promotions -->
+      <button class="flex flex-col items-center space-y-1">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center text-gray-700">
+          <i class="fas fa-percent text-lg"></i>
+        </div>
+        <span class="text-xs text-gray-700 font-medium">Promotions</span>
+      </button>
 
             <!-- Desktop View: Full Dashboard -->
             <div class="hidden md:block">
