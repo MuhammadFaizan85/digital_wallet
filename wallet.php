@@ -245,11 +245,52 @@ $spending_categories = [
 
     <!-- Main Container -->
     <div class="flex min-h-screen">
+       <!-- Header -->
+  <header class="w-full max-w-md  rounded-b-2xl px-3 py-2 flex items-center gap-2 shadow-sm fixed top-0 left-0 right-0 mx-auto z-10">
+    
+    <!-- Avatar -->
+    <div class="w-9 h-9 rounded-full bg-[#D8CCF2] flex items-center justify-center text-sm font-semibold text-[#4B2C8A] flex-shrink-0">
+      ZA
+    </div>
+
+    <!-- Search Bar -->
+    <div class="flex-1 bg-white rounded-full flex items-center px-3 h-9">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-4.35-4.35M9.5 17A7.5 7.5 0 109.5 2a7.5 7.5 0 000 15z" />
+      </svg>
+      <input
+        type="text"
+        placeholder="Find people or merchants"
+        class="flex-1 text-[13px] text-gray-700 placeholder-gray-500 bg-transparent outline-none ml-2"
+      />
+    </div>
+
+    <!-- QR Icon with White Background -->
+    <button class="p-1.5 rounded-full flex items-center justify-center flex-shrink-0 bg-white shadow-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#3B2C35]" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M2 2h6v6H2V2zm2 2v2h2V4H4zm12-2h6v6h-6V2zm2 2v2h2V4h-2zM2 16h6v6H2v-6zm2 2v2h2v-2H4zm6-14h4v2h-4V4zm0 4h4v2h-4V8zm-4 4h4v2H8v-2zm0 4h4v2H8v-2zm8-8h4v2h-4V8zm0 4h4v2h-4v-2zm-4 4h4v2h-4v-2zm4 4h4v2h-4v-2zm2-10h2v2h-2v-2zm0 4h2v2h-2v-2zm-4 0h2v2h-2v-2zm0 4h2v2h-2v-2z"/>
+      </svg>
+    </button>
+
+    <!-- Notification Icon with White Background -->
+    <button class="p-1.5 rounded-full flex items-center justify-center flex-shrink-0 relative bg-white shadow-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[#3B2C35]" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M14 17h5l-1.405-1.405A2.032 2.032 0 0117 14.158V11a5 5 0 00-10 0v3.159c0 .538-.214 1.055-.595 1.436L5 17h5m4 0v1a2 2 0 11-4 0v-1m4 0H9" />
+      </svg>
+
+      <!-- Notification Dot -->
+      <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+    </button>
+
+  </header>
+
         <!-- Sidebar -->
         <div id="sidebar" class="sidebar-gradient text-white fixed h-full z-40 w-64 transition-width md:transform-none">
             <div class="p-4 h-full flex flex-col">
                 <!-- Logo -->
-                <div class="flex items-center space-x-3 mb-8">
+                <div class="flex items-center space-x-3 mb-8 mr-10">
                     <div class="w-10 h-10 bg-gradient-to-r from-primary to-primary-light rounded-xl flex items-center justify-center shadow-md">
                         <i class="fas fa-wallet text-white text-lg"></i>
                     </div>
